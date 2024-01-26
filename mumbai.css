@@ -1,0 +1,186 @@
+form{
+    margin: 0;
+    font-family: arial;
+    padding-left: 20px;
+    width: 50%; /* Adjust the width as needed */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    background-color: rgba(255, 0, 0, 0.26);
+    font-family: arial;
+    color: white;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+    padding: 20px;
+  
+}
+header h1{
+    border: 8px solid white;
+    border-radius: 30px;
+    display: inline-block;
+  padding: 6px 12px;;
+} 
+section img{
+    width: 100%;
+    position: relative;
+}
+.welcome h2{
+    background-color: rgba(2, 63, 10, 0.356);
+    color: white;
+    position: absolute;
+    left: 0px;
+    top: 25%;
+    font-family: arial;
+    font-size: 55px
+    }
+div span{
+    font-size:1.7em ;
+}
+
+
+/*NEXT=NAVIGATIONAL BAR*/
+nav li{
+    /*this will cause them to arrange side by side*/
+    width: 25%;
+    display: inline-block;
+    font-size: 17px;
+}
+nav ul{
+    /* this will arrange them close to one another properly */
+    max-width: 1200px;
+    white-space: nowrap;
+    margin: 0 auto;
+}
+nav{
+  /* this will cause the sticky movement*/
+    position: sticky;
+    top: 150px;
+}
+h2{
+    text-align: center;
+}
+p{
+    text-align: justify;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*ARRANGING PIX SIDE BY SIDE*/
+ main ul{
+    margin: 0 auto;
+    white-space: nowrap;
+    max-width: 1200px;
+} 
+main li{
+    /*this will crop the image and arrange them side by side*/
+    display: inline-block;
+    width: 40%;
+    margin: 20px 5%;
+}
+main li img{
+    /*this makes image not to go outside browser*/
+    max-width: 100%;
+} 
+.visit{
+    background: #f4f4f4;
+    text-align: center;
+    padding: 60px 20px;
+    color: #4b4b4b;
+}
+
+form input{
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 28px;
+    border: 4px solid  #4b4b4b;
+    text-align: center;  
+}
+
+footer{
+    background-color: red;
+    padding: 12px;
+ 
+}
+footer p{
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+nav li:hover{
+    text-decoration: underline;
+}
+main li:hover{
+    position:relative;
+    top: -4px;
+}
+form input:focus{
+    border: 4px dashed #cc656585;
+} 
+form input:valid{
+    border: 4px solid  rgb(43, 255, 0);
+}
+article p::selection{
+    background-color: red;
+    color: white;
+}
+@media screen and (max-width:900px) {
+    .welcome h2{
+        font-size: 35px;
+
+        }
+}
+@media screen and (max-width:700px) {
+    .welcome h2{
+        position: static;
+        font-size: 30px;
+        background-color: rgba(221, 103, 6, 0.932);
+        text-align: center;
+        }
+        .welcome br{
+        display: none;
+        }
+        .welcome span{
+        font-size:30px;
+        }
+        nav li{
+            font-size: 14px;
+        }
+}
+@media screen and (max-width:500px) {
+    nav li{
+        width: 100%;
+        display: block;
+        font-size: 15px; 
+    }
+    nav{
+        position: static;
+    }
+    header{
+        position:static;
+        background-color:rgba(221, 103, 6, 0.932);
+    }
+    /*ARRANGING PIX SIDE BY SIDE*/
+ main ul{
+    margin: 0 auto;
+    white-space: nowrap;
+    max-width: 1200px;
+} 
+main li{
+    /*this will crop the image and arrange them side by side*/
+    display: block;
+    width: 100%;
+    margin: 20px 5%;
+}
+main li img{
+    /*this makes image not to go outside browser*/
+    max-width: 100%;
+}
+    }
