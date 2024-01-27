@@ -95,6 +95,10 @@ main li img{
     color: #4b4b4b;
     
 }
+.visit h2{
+ cursor: pointer;
+    
+}
 
 
 form input{
