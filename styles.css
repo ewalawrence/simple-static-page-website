@@ -71,6 +71,9 @@ p{
     max-width: 1200px;
     margin: 0 auto;
 }
+main h2 {
+    padding-bottom: 1px;
+}
 
 /*ARRANGING PIX SIDE BY SIDE*/
  main ul{
@@ -165,33 +168,53 @@ article p::selection{
             font-size: 14px;
         }
 }
-@media screen and (max-width:500px) {
-    nav li{
+@media screen and (max-width: 500px) {
+    nav li {
         width: 100%;
         display: block;
-        font-size: 15px; 
+        font-size: 15px;
     }
-    nav{
+    nav {
         position: static;
     }
-    header{
-        position:static;
-        background-color:rgba(221, 103, 6, 0.932);
+    header {
+        position: static;
+        background-color: rgba(221, 103, 6, 0.932);
     }
-    /*ARRANGING PIX SIDE BY SIDE*/
- main ul{
-    margin: 0 auto;
-    white-space: nowrap;
-    max-width: 1200px;
-} 
-main li{
-    /*this will crop the image and arrange them side by side*/
-    display: block;
-    width: 100%;
-    margin: 20px 5%;
-}
-main li img{
-    /*this makes image not to go outside browser*/
-    max-width: 100%;
-}
+    /* ARRANGING PIX SIDE BY SIDE */
+    main ul {
+        white-space: nowrap;
+        max-width: 100%;
+        overflow-x: auto; /* Add this to enable horizontal scrolling if necessary */
     }
+    main li {
+        display: inline-block; /* Change display to inline-block */
+        width: 45%; /* Adjust width as needed */
+        margin: 20px 2.5%; /* Adjust margin as needed */
+        box-sizing: border-box; /* Include padding and border in the total width */
+    }
+    main li img {
+        max-width: 100%;
+        height: auto; /* Ensure images maintain their aspect ratio */
+        display: block;
+        margin: 0 auto; /* Center the images */
+    }
+
+   section.visit {
+    padding-top:  5px;
+   }
+   section.visit h2 {
+    margin-bottom:  1px;
+   
+   }
+
+  main p{
+    padding:  15px;
+    margin:  5px;
+    padding-top:  5px;  
+}
+main h2{
+margin:0px;
+padding-bottom: 0px
+}
+}
